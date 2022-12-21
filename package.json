@@ -9,6 +9,7 @@
   },
   "scripts": {
     "warning:install": "echo 'remember to run npm install before starting if things have changed'",
-    "dev": "npm run warning:install && clojure -M:fig:build"
+    "dev": "npm run warning:install && lein fig:build",
+    "build": "lein clean && lein fig:min"
   }
 }
